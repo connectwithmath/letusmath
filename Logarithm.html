@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Let Us Math</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Learn and practice mathematics questions and answers with detailed explanations" />
+<meta name="keywords" content="mathematics, Logarithm, Common Logarithm, Natural Logarithm, Binary Logarithm, Logarithm rules" />
+
+<link rel="icon" type="image/png" href="../images/LUM-icon.PNG" />
+<link href="../lifelongeducation.css" type="text/css" rel="stylesheet" media="screen" />
+<script src="../jquery.js"></script>
+<script src="../commonjsfunctions.js"></script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+</head>
+<body class="bg">
+
+<div class="image" style="background-image: url(../images/Vintage-Blue-Leather-Texture-Background.jpg); background-repeat: no-repeat; background-size: 100%">
+  </center><img src="../images/letusmath.PNG" alt="Mountain View" align="middle" style="width:100px;height:25px;box-shadow: 5px 5px 2px #000066;"></img>
+  <span id="username" class="username" style="padding: 5px 5px; float: right;">Guest</span>
+</div>
+<div style="clear: left">
+<ul>
+    <li><a href="/" class="active">Learn</a></li>
+    <li><a href="../class.html">Practice</a></li>
+    <li><a href="../tables.html">Learning Tools</a></li>
+    <li><a href="../worksheets.html">Worksheets</a></li>
+    <li><a href="../askaquestion.html">Ask a question</a></li>
+    <li><a href="../showquestions.html">Answer Questions</a></li>
+    <li><a href="../contactus.html">Contact us</a></li>
+    <button class="button" id="loginbutton" onclick="logincheck();" style="background-color: black; padding: 5px 5px; float: right;border-radius: 5px;">Sign in</button> 
+</ul>
+</div>
+
+<div class="whiteline"></div>
+<div class="whiteborder"> <img src="../images/top-image.jpg" alt="Happy people" align="middle" style="width:100% ;height:200px;">
+</img></div>
+<div class="wrapper">
+
+  <div id="topicAreaLink" style="float: left">
+    <span style="font-size:30px;cursor:pointer; position: fixed; top: 300px; right: 30px; color: #f1f1f1; background-color: #3a353b" onclick="openNav();">&#9776; Topics</span>
+  </div>
+      
+  <div id="topicArea" class="leftdiv"></div>
+
+  <div id="articleArea" class="rightdiv" style="width:75%; background-color: white; box-shadow: none; margin-left: 2px;">
+    <div articlepara1 class="p2" style="font-size: 16px; line-height: 140%; margin: 5px;">
+      <h1><strong>Logarithm</strong></h1>
+      <br />
+      <div id="introduction" class="tablepagecentre" style="width:100%;">
+        <a name=introduction></a>
+        <h3 style="text-decoration:underline; text-decoration-color:#33CCFF; text-decoration-style:solid">What is Logarithm</h3>
+        The logarithm is the inverse operation to exponentiation. <br />
+        The logarithm of a number is the exponent to which another fixed number, the base, must be raised to produce that number. <br />
+        For example, the fourth power of 2 $(2^4)$ = 2 * 2 * 2 * 2 = 16 means that logarithm of 16 with respect to base 2 is 4 <br /><br />
+        $2^4$ = 16 or $log_2 16$ = 4
+        <br />
+        When we say $log_2 16$, what we are actually saying is that what power 2 needs to be raised to to get 16
+        <br /> <br />
+        Let us try with some other bases. <br />
+        When we say $log_3 81$, what we are saying is that what power 3 needs to be raised to to get 81? <br />
+        Let us try it our manually. <br /> $3 * 3 * 3 * 3 = 81$ shows us that $3^4$ = 81
+        <br />
+        $&there4; log_3 81 = 4$
+        <br /><br />
+        Now try to solve this yourself. $log_6 1296$ = ?
+        <br /><br />
+        Interestingly, $log_{10} 1 = 0$ <br />
+        For that matter, for any base b, $log_b 1 = 0$. Can you figure out why? <br />
+        This is so because $log_b 1 = 0$ can also be written as $b^0 = 1$ and we all know that any number b raised to 0 is always 1 !!!
+        <br /><br /><br />
+        The logarithm, in general, is denoted as $log_b x$ (pronounced as "the logarithm of x to base b").
+        <br /><br />
+        The logarithm to base 10 (where b = 10) is called the common logarithm. 
+        <br />
+        The logarithm to base $e$ (where b = e) is called the natural logarithm where e = 2.71828
+        <br />
+        The logarithm to base 2 (where b = 2) is called the binary logarithm. 
+        <br /><br />
+      </div>
+      <br /><br />
+      <div id="common logarithm" class="tablepagecentre" style="width:100%;">
+        <a name=commonlogarithm></a>
+        <h3 style="text-decoration:underline; text-decoration-color:#33CCFF; text-decoration-style:solid">Common Logarithm</h3>
+      
+        The common logarithm is the logarithm to base 10. <br />
+        $log_{10} 1000 = 3$ <br />
+        $log_{10} 100 = 2$ <br />
+        $log_{10} 10 = 1$ <br />
+        $log_{10} 1 = 0$ <br />
+        As one can guess, the common logarithm of numbers between 10 to 100 would lie between 1 and 2. <br />
+        If a log has no base written, you can generally assume that the base is 10.
+        <br /><br />
+        <strong>Can logarithm be negative?</strong> <br />
+        Yes, logarithm of a positive number less than 1 is negative. e.g. <br />
+        $log_{10} 0.1 = -1$  <br />
+        $log_{10} 0.01 = -2$ <br />
+        $log_{10} 0.001 = -3$ <br />
+        Why? This is because $10^{-1} = 0.1$, $10^{-2} = 0.01$, $10^{-3} = 0.001$ and so on.
+        <br /><br />
+        <strong>What is log of a negative number?</strong><br />
+        Log of a negative number is not a real number. <br /> 
+        To understand this better, let us take a logarithmic function $y = log_b x$ <br />
+        This can also be represented as $x = b^y$ <br />
+        Since $b$ and $y$ are both positive numbers, $x$ must also be positive. <br />
+        Hence $log_b x$ for $x$ &le; 0 is undefined <br />
+        For example,
+        $log_{10} 0 $ is undefined.
+        $log_b ({-4})$ is undefined.
+        <br />
+        <br />
+        The real logarithmic function $log_b (x)$ is defined only for x>0.  However, we can imagine it in the form of complex numbers.
+        We will disucss about it in subsequent topics. 
+        <br />
+      </div>
+      
+      <br />
+      <br />
+      <div id="natural logarithm" class="tablepagecentre" style="width:100%;">
+        <a name=naturallogarithm></a>
+        <h3 style="text-decoration:underline; text-decoration-color:#33CCFF; text-decoration-style:solid">Natural Logarithm</h3>
+        The logarithm to base $e$ is called the natural logarithm where e = 2.71828 <br />
+        The natural logarithm is inverse of $e^x$ and is the power to which $e$ should be raised to obtain the given number.<br />
+        It is generally written as $ln(x)$. <br />
+        The natural log of $e, ln(e) = 1$, because $e^1 = e$. <br />
+        The natural logarithm of $1, ln 1 = 0$, since $e^0 = 1$.<br /> <br />
+        An interesting use of natural logarithm is in case of continous compounding. If you know about compound interest, the frequency of compounding
+        is generally yearly, semiannually, quarterly or monthly. However, if one compounds interest over an infinite number of periods i.e. almost on a continous
+        basis, it is called continous compounding. <br /><br />
+        The future value (FV) of investment with compounding of interest is given as $FV = PV (1 + i/n))^{n * t}$ <br />
+        where PV is the Present Value <br />
+        i is the Rate of Interest <br />
+        n is the number of compounding periods and<br />
+        t is the time in years <br /><br />
+        In continous compounding, n approaches infinity. Hence taking the limit of this formula as n approaches $&infin;$, we get <br />
+        $FV = PV * e ^ {(i * t)}$ <br /><br />
+        As can be seen, the number $e$ represents the continous growth. For a given rate of interest, it lets us find out the time which would give us the
+        required growth. <br />
+        $e^2$ is 7.389. After 2 units of time (e.g. years), we will have 7.389 times the growth in the amount invested. <br />
+        In other words, ln (7.389) = 2 represents that to achieve growth of 7.389, we would need for 2 units of time.
+        Some quick inferences - ln (1) = 0 indicates that to achieve growth of 1, we need to wait for 0 units of time. Very logical !!!
+        You already have the required 1 times the amount. <br /><br />
+        <strong>What is natural log of a negative number?</strong><br />
+        As in case of common logarithm, natural log of a negative number is also not defined.
+        <br />
+      </div>
+      <br />
+      <br />
+      <div id="binary logarithm" class="tablepagecentre" style="width:100%;">
+        <a name=binarylogarithm></a>
+        <h3 style="text-decoration:underline; text-decoration-color:#33CCFF; text-decoration-style:solid">Binary Logarithm</h3>
+        The logarithm to base $2$ is called the binary logarithm. <br /><br />
+        The binary logarithm of a number n is often written as $log_2 (n)$ and is the power to which the number 2 must be raised to obtain the value n.<br />
+        $log_2 16 = 4$ <br />
+        $log_2 8 = 3$ <br />
+        $log_2 4 = 2$ <br />
+        $log_2 2 = 1$ <br />
+        $log_2 1 = 0$ <br /><br />
+        Binary logarithm has many applications in Information theory. It is used in Binary Search, in determining rate of growth or decays etc.
+        <br />
+      </div>
+      
+      <br />
+      <br />
+      <div id="logarithm rules" class="tablepagecentre" style="width:100%;">
+        <a name=logarithmrules></a>
+        <h3 style="text-decoration:underline; text-decoration-color:#33CCFF; text-decoration-style:solid">Logarithm Rules</h3>
+        $log_b (x) + log_b (y) = log_b (xy)$ 
+        <br /><br />
+        $log_b (x) - log_b (y) = log_b (x/y)$
+        <br /><br />
+        $y log_b (x) = log_b (x^y)$
+        <br /><br />
+        Logarithms and Exponentials with the same base cancel each other. This is because Logarithms are inverse of Exponentials. <br />
+        $b^{ log_b x} = x$ <br />
+        $log_b (b^x) = x$ <br />
+        <br />
+        There are many more general logarithm rules which are currently not included in this tutorial.
+        <br />
+      </div>
+    </div>    
+  </div>
+</div>
+
+<button onclick="topFunction()" id="goToTopBtn" title="Go to top">Top</button>
+
+<script type="text/javascript">
+  
+$(document).ready(function(){
+    $('.vertical-menu a').click(function() {
+        $(this).addClass('active');
+    });
+});
+
+
+function openNav() {
+    $("#topicArea").load("../topicsmenu.html");
+    document.getElementById("topicArea").style.width = "30%";
+}
+
+function closeNav() {
+    document.getElementById("topicArea").style.width = "0%";
+    document.getElementById("topicAreaLink").style.display = "block";
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("goToTopBtn").style.display = "block";
+    } else {
+        document.getElementById("goToTopBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105802284-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
